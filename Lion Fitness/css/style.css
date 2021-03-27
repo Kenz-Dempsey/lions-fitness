@@ -1,0 +1,539 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*Web Fonts----------------------*/
+
+@font-face {
+  font-family: "Open Sans Condensed", sans-serif;
+  src: url("../fonts/abolition-regular-webfont.eot");
+  src: url("../fonts/abolition-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/abolition-regular-webfont.woff") format("woff"),
+    url("../fonts/abolition-regular-webfont.ttf") format("truetype");
+}
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Open Sans Condensed", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  /* 3-d drop shadow on title text*/
+  font-size: 5.625rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  margin: 12px 0 0;
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 0.5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(171, 105, 233);
+}
+
+a:hover {
+  color: rgba(255, 169, 73, 0.4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 650px;
+
+  background: linear-gradient(75deg, #c76aeb6b, transparent 90%),
+    linear-gradient(-75deg, #e610b18e, transparent 90%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.712), transparent),
+    #ffa949 url("../img/fitnesschallemail.jpg") no-repeat center;
+
+  background-size: cover;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  display: inline-flexbox;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.title {
+  color: white;
+  font-size: 1.5rem; /* 26px/16px */
+  letter-spacing: 0.065em;
+  font-weight: 200;
+  padding-bottom: 10px;
+  display: block;
+  position: relative;
+  font-size: 4rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  margin: 12px 0 0 200px;
+  text-align: center;
+  padding-right: 220px;
+  bottom: 200px;
+}
+
+.intro {
+  font-size: 2em; /* 20px/16px */
+  line-height: 1.6;
+}
+
+.prices {
+  font-size: 1.25em;
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+.pricing-content {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: block;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #ffa949;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+  padding-top: 500px;
+}
+
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.cta {
+  font-size: 50px;
+}
+
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+  padding-top: 50px;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+  border-bottom: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.row {
+  padding-bottom: 500px;
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-left: 60px;
+}
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+  position: relative;
+  bottom: 200px;
+}
+.title {
+  font-size: 4rem;
+  border: none;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+.trainer {
+  align-content: inherit;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.selling-points {
+  align-content: inherit;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 20px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ee9b00;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a lighter orange color */
+input[type="submit"]:hover {
+  background-color: #ffa949;
+}
+
+/* Add a background color and some padding around the form */
+.container2 {
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+.primary-content-b {
+  background-color: #ee9b00;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: 0.5s;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  border-top-color: initial;
+  border-top-style: none;
+  border-top-width: initial;
+  border-right-color: initial;
+  border-right-style: none;
+  border-right-width: initial;
+  border-bottom-color: initial;
+  border-bottom-style: none;
+  border-bottom-width: initial;
+  border-left-color: initial;
+  border-left-style: none;
+  border-left-width: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-family: inherit;
+  font-size: inherit;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  cursor: pointer;
+  padding: 25px 80px;
+  padding-top: 25px;
+  padding-right: 80px;
+  padding-bottom: 25px;
+  padding-left: 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  margin-top: 15px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: left;
+}
+
+.resorts {
+  float: right;
+  border-radius: 2%;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries----------------------*/
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    .primary-content,
+    .secondary-content {
+      width: 90%;
+    }
+    .wildlife {
+      padding: 10% 12%;
+      margin: 50px 0 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .primary-content,
+    .secondary-content,
+    .title {
+      width: 100%;
+      padding: 20px;
+      border-top: none;
+    }
+    @media (min-width: 768px) {
+      .title {
+        margin-top: 0px;
+      }
+    }
+
+    .main-header {
+      max-height: 380px;
+      padding: 50px 25px 0;
+    }
+    .arrow {
+      display: block;
+    }
+    .intro {
+      font-size: 1rem;
+    }
+    .resorts,
+    .tips {
+      float: none;
+      width: 100%;
+    }
+    .main-footer {
+      padding: 20px 0;
+    }
+  }
+}
+
+.bi-instagram,
+.bi-facebook {
+  margin-right: 10px;
+}
+.back-to-top {
+  display: block;
+}
+
+.address {
+  display: inline-block;
+}
