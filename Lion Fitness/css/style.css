@@ -5,7 +5,7 @@ html {
 /*Web Fonts----------------------*/
 
 @font-face {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   src: url("../fonts/abolition-regular-webfont.eot");
   src: url("../fonts/abolition-regular-webfont.eot?#iefix")
       format("embedded-opentype"),
@@ -22,18 +22,19 @@ html {
 body {
   color: #878787;
   margin: 0;
-  font: 1em/1.5 "Open Sans Condensed", sans-serif;
+  font: 1em/1.5 sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-h1,
 h2 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   padding-bottom: 20px;
   margin-bottom: 200px;
 }
 
 h1 {
   /* 3-d drop shadow on title text*/
+  font-family: "audiowide";
   font-size: 5.625rem; /* 90px/16px  */
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
@@ -152,16 +153,8 @@ a:active {
   font-size: 20px;
 }
 
-.button {
-  background-color: #000000;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
 .title {
+  font-family: "audiowide";
   color: white;
   font-size: 1.5rem; /* 26px/16px */
   letter-spacing: 0.065em;
@@ -199,6 +192,19 @@ a:active {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px;
+}
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #navbar {
   overflow: hidden;
@@ -244,6 +250,9 @@ a:active {
 .main-footer {
   text-align: center;
   padding-top: 500px;
+}
+.abf {
+  font-family: audiowide;
 }
 
 .primary-content {
