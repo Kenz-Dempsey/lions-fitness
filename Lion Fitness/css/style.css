@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  color: #000000;
 }
 
 /* Base Styles -------------------- */
@@ -13,6 +14,7 @@ body {
   margin: 0;
   font: 1em/1.5 sans-serif;
   font-family: "Roboto Condensed", sans-serif;
+  padding-top: 0;
 }
 
 h2 {
@@ -87,7 +89,7 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-  padding-top: 170px;
+  padding-top: 50px;
   height: 650px;
 
   background: linear-gradient(75deg, #c76aeb6b, transparent 90%),
@@ -98,16 +100,17 @@ a:active {
   background-size: cover;
 }
 .column {
-  float: left;
   width: 33.33%;
   padding-right: 20px;
   padding-left: 20px;
   height: 300px;
   display: inline-block;
+  flex-wrap: wrap;
 }
 .title-color {
   color: #ee9b00;
-  font-size: larger;
+  font-size: 32px;
+  font-family: "audiowide";
 }
 .columns {
   float: left;
@@ -199,17 +202,37 @@ a:active {
   border-radius: 4px;
   cursor: pointer;
 }
+.bg-dark {
+  color: rgb(0, 0, 0);
+}
 
 #white {
   color: white;
-  font-size: larger;
+  font-size: 32px;
+  font-family: "audiowide";
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   display: block;
-  height: 50px;
+  height: 500px;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
 }
 
 #navbar a {
@@ -230,6 +253,10 @@ a:active {
 #navbar a.active {
   background-color: #ee9b00;
   color: white;
+}
+
+#orange {
+  color: rgb(255, 169, 73);
 }
 
 .content {
@@ -300,7 +327,12 @@ a:active {
   max-width: 960px;
 }
 .row {
-  padding-bottom: 500px;
+  padding-bottom: 50px;
+  flex: auto;
+}
+
+.right {
+  float: inline-end;
 }
 
 .nav {
