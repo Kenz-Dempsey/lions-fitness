@@ -20,8 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <h2 class="fade-in wow navbar-brand hvr-grow" data-wow-delay=".5s"><a href="index.html"><span class="title-color">Lions </span><span id="white">Fitness</span></a></h2>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav right">
@@ -29,13 +28,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Gyms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#join-now">Pricing</a>
             </li>
           </ul>
         </div>
@@ -44,7 +40,7 @@
     <header id="top" class="main-header">
       <span class="title">It's time to change your life</span>
       <a href="#calltoaction">
-        <img href="#" class="arrow hvr-grow" src="../img/arrow.svg" alt="Down arrow" />
+        <img id="arrow" href="#" class="arrow hvr-grow" src="../img/arrow.svg" alt="Down arrow" />
       </a>
     </header>
       <div id="calltoaction" class="primary-content">
@@ -58,9 +54,9 @@
     </div>
     <div class=" primary-content t-border animate__animated animate__fadeIn WOW wow data-wow-delay=".5s">
       <h2>Why work with us?</h2>
-      <p class="intro"></p>
+      <div class="container item" >
       <div class="row">
-        <div class="column" style="background-color: rgba(170, 170, 170, 0)">
+        <div id="column-row" class="column" style="background-color: rgba(170, 170, 170, 0)">
           <img class="trainer" src="../img/undraw_personal_trainer_ote3.svg" />
           <h3>Experienced Personal Trainers</h3>
           <p>
@@ -69,7 +65,7 @@
             style and personality.
           </p>
         </div>
-        <div class="column" style="background-color: rgba(187, 187, 187, 0)">
+        <div id="column-row" class="column" style="background-color: rgba(187, 187, 187, 0)">
           <img class="trainer" src="../img/undraw_Building_vpxo.svg" />
           <h3>Biggest Gyms</h3>
           <p>
@@ -78,7 +74,7 @@
             gymnasiums.
           </p>
         </div>
-        <div class="column" style="background-color: rgba(204, 204, 204, 0)">
+        <div id="column-row" class="column" style="background-color: rgba(204, 204, 204, 0)">
           <img class="trainer" src="../img/undraw_working_out_6psf.svg" />
           <h3>Best Programs</h3>
           <p>
@@ -88,9 +84,10 @@
           </p>
         </div>
       </div>
+      </div>
       <div class="t-border">
         <div id="join-now">
-          <p class="intro  animate__animated animate__fadeIn WOW wow data-wow-delay=".5s">Pricing</p>
+          <p class=" fix-border intro  animate__animated animate__fadeIn WOW wow data-wow-delay=".5s">Pricing</p>
         </div>
       </div>
       <div class="animate__animated animate__fadeIn WOW wow data-wow-delay=".5s">
@@ -134,7 +131,7 @@
           </ul>
         </div>
       </div>
-      <a class="callout  animate__animated animate__fadeIn WOW wow data-wow-delay=".5s" href="#contact-us">Contact Us</a>
+      <a id="orange" class="hvr-grow callout  animate__animated animate__fadeIn WOW wow data-wow-delay=".5s" href="#contact-us">Contact Us</a>
     </div>
     <!-- End .primary-content -->
 
@@ -162,6 +159,7 @@
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
+            <option value="uk">UK</option>
           </select>
 
           <label for="subject">Subject</label>
@@ -181,18 +179,19 @@
       <div class="abf">
         <h3>About Lions Fitness</h3>
       </div>
-      <p>
+      <p class="footer-text">
         Lions Fitness was founded by Derek Hale in 1998 during his golden
         bodybuilding days. <br />He always struggled to find the right advice
-        from credible mentors, as the industry filled with fake gurus and
+        from credible mentors, as the industry filled <br />with fake gurus and
         bodybuilding products.<br />
         Derek Hale envisioned Lions Fitness as the #1 source for fitness
         enthusiast. <br />Now it serves as training grounds for people all over
-        the country whom are trying to take their fitness journey's to the next
-        level. Lions Fitness will be taking the next step in becoming a
+        the country whom are trying to take <br /> their fitness journey's to the next
+        level. Lions Fitness will be taking the next step in becoming <br />a
         worldwide gym by opening 22 new locations all over the world in 2018.
       </p>
-      <a href="#">
+      <h3 class="contact-footer">Find us here:</h3>
+      <a id="orange" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -206,7 +205,7 @@
           />
         </svg>
       </a>
-      <a href="#">
+      <a  id="orange" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -220,7 +219,7 @@
           />
         </svg>
       </a>
-      <a href="#">
+      <a id="orange" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -234,7 +233,7 @@
           />
         </svg>
       </a>
-      <a class="back-to-top" href="#top">Back to top &raquo;</a>
+      <a id="orange" class="back-to-top" href="#top">Back to top &raquo;</a>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

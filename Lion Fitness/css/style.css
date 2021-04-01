@@ -99,6 +99,10 @@ a:active {
 
   background-size: cover;
 }
+
+.fix-border {
+  padding-top: 250px;
+}
 .column {
   width: 33.33%;
   padding-right: 20px;
@@ -259,6 +263,15 @@ a:active {
   color: rgb(255, 169, 73);
 }
 
+#column-row {
+  width: 33.33%;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 300px;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
 .content {
   padding: 16px;
 }
@@ -279,7 +292,14 @@ a:active {
   padding-top: 500px;
 }
 .abf {
-  font-family: audiowide;
+  font-family: "audiowide";
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-text {
+  text-align: left;
+  padding-left: 20px;
 }
 
 .primary-content {
@@ -545,6 +565,9 @@ input[type="submit"]:hover {
       .title {
         margin-top: 0px;
       }
+      .columns {
+        display: inline-flex;
+      }
     }
 
     .main-header {
@@ -553,6 +576,7 @@ input[type="submit"]:hover {
     }
     .arrow {
       display: block;
+      padding-bottom: 50px;
     }
     .intro {
       font-size: 1rem;
@@ -578,4 +602,12 @@ input[type="submit"]:hover {
 
 .address {
   display: inline-block;
+}
+
+@media (min-width: 1738px) {
+  .arrow {
+    padding-bottom: 503px;
+  }
+  #arrow {
+  }
 }
