@@ -300,6 +300,7 @@ a:active {
 .footer-text {
   text-align: left;
   padding-left: 20px;
+  color: white;
 }
 
 .primary-content {
@@ -330,6 +331,15 @@ a:active {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 10px solid #ffa949;
+  background-color: #212529 !important;
+}
+.footer-align {
+  padding-right: 0;
+}
+
+#footer-contact {
+  align-content: right;
+  background-color: #212529 !important;
 }
 
 .t-border {
@@ -406,6 +416,61 @@ textarea {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+/* gyms css */
+.gyms-title {
+  font-size: 2em;
+  align-items: center;
+  text-align: center;
+  padding-top: 45px;
+}
+.gyms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gyms-item-1,
+.gyms-item-2,
+.gyms-item-3 {
+  flex-grow: 1;
+}
+.gym-img {
+  width: 400px;
+  height: 320px;
+  border-radius: 5%;
+}
+.gyms-title {
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
+.gyms-container img {
+  height: 300px;
+  max-width: 100%;
+}
+
+.gyms-item-1,
+.gyms-item-2,
+.gyms-item-3 {
+  margin: 50px 0;
+  transition: transform 0.5s;
+}
+
+.gyms-item-1:hover,
+.gyms-item-2:hover,
+.gyms-item-3:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.gyms-content {
+  margin: -7px auto 0;
+  padding: 15px;
+  max-width: 397px;
+}
+
+.gyms-content h3 {
+  margin-top: 0;
+}
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #ee9b00;
@@ -602,6 +667,7 @@ input[type="submit"]:hover {
 
 .address {
   display: inline-block;
+  color: white;
 }
 
 @media (min-width: 1738px) {
